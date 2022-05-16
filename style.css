@@ -27,29 +27,24 @@ body{
 header{
     background-color: black;
     color: white;
-
-    margin: auto;
-    width: auto;
-    height: auto;
+    text-align: center;
 }
+
 header > h1{
     padding-top: 50px;
-    text-align: center;
-
     font-variant: small-caps;
     font-size: 10vw;
     font-family: var(--font2);
-    font-weight: bold;
 }
+
 header > h2{
-    text-align: center;
     font-family: var(--font1);
     font-size: 1em;
     font-weight: normal;
     padding-bottom: 50px;
 }
 
-header a{
+header a, footer a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -59,20 +54,23 @@ header a:hover{
     text-decoration: underline;
 }
 
-p {
+section{
     font-family: var(--font3);
-    font-size: 3.5vw;
     line-height: 2em;
-    border-radius: 0px 20px;
-
-    padding: 62px 30px 100px 30px;
+    font-size: 3.5vw;
+    padding: 10vh 10px 10vh 30px;
 }
 
-.imagem{
-    background-color: rgba(0, 0, 0, 0.486);
-    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.322);
-    height: 800px;
-    position: relative;
+
+section > p {
+    border-radius: 0px 20px;
+    padding-bottom: 2em;
+}
+
+section.imagem{
+    background-color: rgba(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.322);
 }
 
 #img01 {
@@ -85,9 +83,6 @@ p {
 
 .imagem > p{
     display: inline-block;
-    position: absolute;
-    top: 8%;
-    left: 30px;
     color: white;
     background-color: rgba(0, 0, 0, 0.486);
     text-shadow: 0px 1px 2px black;
@@ -95,24 +90,12 @@ p {
 }
 
 footer {
-    height: 33px;
+    height: 30px;
     background-color: black;
     color: white;
-}
-
-footer > p {
-    font-size: 1em;
     font-family: var(--font1);
     text-align: center;
-    margin: 0px;
-    padding: 0px;
-}
-
-footer a {
-    font-size: 1em;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
+    padding: 5px 0px 20px 0px;
 }
 
 footer a:hover{
